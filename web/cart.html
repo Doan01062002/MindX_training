@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="index.html"
+        ><img
+          style="width: 50px; height: 50px"
+          src="./img/zyro-image.png"
+          class="logo"
+          alt=""
+      /></a>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search name"
+          aria-label="Search"
+        />
+      </form>
+
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html">
+              <button type="button" class="btn btn-primary position-relative">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="user-info" class="btn-login">
+        <button class="normal">
+          <a style="text-decoration: none" href="./login.html">Đăng nhập</a>
+        </button>
+        <button class="normal">
+          <a style="text-decoration: none" href="./register.html">Đăng ký</a>
+        </button>
+      </div>
+    </section>
+
+    <section id="cart">
+      <table with="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-xmark"></i></a>
+            </td>
+            <td><img src="./img/1.jpg" alt="" /></td>
+            <td>Cartoon Astro</td>
+            <td>$222</td>
+            <td><input type="number" value="1" /></td>
+            <td>$222</td>
+          </tr>
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-xmark"></i></a>
+            </td>
+            <td><img src="./img/1.jpg" alt="" /></td>
+            <td>Cartoon Astro</td>
+            <td>$222</td>
+            <td><input type="number" value="1" /></td>
+            <td>$222</td>
+          </tr>
+          <tr>
+            <td>
+              <a href=""><i class="fa-regular fa-circle-xmark"></i></a>
+            </td>
+            <td><img src="./img/1.jpg" alt="" /></td>
+            <td>Cartoon Astro</td>
+            <td>$222</td>
+            <td><input type="number" value="1" /></td>
+            <td>$222</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add">
+      <div id="coupon">
+        <h3>Apply coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Your coupon" />
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$666</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$666</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proced to checkout</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="col">
+        <img
+          style="width: 70px; height: 70px"
+          class="logo"
+          src="./img/zyro-image.png"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> Thanh Xuân, Nguyễn Trãi, Hà Nội</p>
+        <p><strong>Phone: </strong> +8433953380</p>
+        <p><strong>Hours: </strong> 6:00 - 22:00, Thứ 2 - Chủ Nhật</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or google play</p>
+        <div class="row">
+          <img
+            style="width: 180px; height: 50px"
+            src="./img/Download_on_the_App_Store_Badge.svg.webp"
+            alt=""
+          />
+          <img
+            style="width: 180px; height: 50px"
+            src="./img/Google_Play_Store_badge_EN.svg.webp"
+            alt=""
+          />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img
+          style="width: 150px; height: 50px"
+          src="./img/visa-mastercard.png"
+          alt=""
+        />
+      </div>
+
+      <div class="copyright">
+        <p>@ 2024 HTML CSS JAVASCRIPT</p>
+      </div>
+    </footer>
+
+    <script src="./js/cart.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

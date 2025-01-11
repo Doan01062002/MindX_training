@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img style="width: 50px; height: 50px;" src="./img/zyro-image.png" class="logo" alt=""></a>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search name" aria-label="Search">
+        </form>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">
+                    <button type="button" class="btn btn-primary position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </a></li>
+            </ul>
+        </div>
+
+        <div id="user-info" class="btn-login">
+            <button class="normal">
+                <a style="text-decoration: none;" href="./login.html">Đăng nhập</a>
+            </button>
+            <button class="normal">
+                <a style="text-decoration: none;" href="./register.html">Đăng ký</a>
+            </button>
+        </div>
+        
+        
+    </section>
+
+    
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./img/carousel2.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./img/carousel1.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./img/carousel3.webp" class="d-block w-100 c-img" alt="Slide 3">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <section id="product1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./img/product5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 1</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro">
+                <img src="./img/product6.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro">
+                <img src="./img/product7.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 2</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro">
+                <img src="./img/product8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 3</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>30% Off</span>... All </h2>
+        <button class="normal">Explore More</button>
+    </section>
+    
+    <section id="product1">
+        <h2>News Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container" id="product-list">
+            <div class="pro" data-name="Cartoon 4">
+                <img style="height: 250px;" src="./img/1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 4</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 4" 
+                data-price="78" 
+                data-image="./img/1.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 5">
+                <img style="height: 250px;" src="./img/2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 5</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 5" 
+                data-price="78" 
+                data-image="./img/2.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 6">
+                <img style="height: 250px;" src="./img/3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 6</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 6" 
+                data-price="78" 
+                data-image="./img/3.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 7">
+                <img style="height: 250px;" src="./img/4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 7</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 7" 
+                data-price="78" 
+                data-image="./img/4.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 8">
+                <img style="height: 250px;" src="./img/5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 8</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 8" 
+                data-price="78" 
+                data-image="./img/5.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 9">
+                <img style="height: 250px;" src="./img/6.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 9</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 9" 
+                data-price="78" 
+                data-image="./img/6.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 10">
+                <img style="height: 250px;" src="./img/7.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 10</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 10" 
+                data-price="78" 
+                data-image="./img/7.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <div class="pro" data-name="Cartoon 11">
+                <img style="height: 250px;" src="./img/8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon 11</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button id="cart" class="add-to-cart" 
+                data-name="Cartoon 11" 
+                data-price="78" 
+                data-image="./img/8.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="col">
+            <img style="width: 70px; height: 70px;" class="logo" src="./img/zyro-image.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Thanh Xuân, Nguyễn Trãi, Hà Nội</p>
+            <p><strong>Phone: </strong> +8433953380</p>
+            <p><strong>Hours: </strong> 6:00 - 22:00, Thứ 2 - Chủ Nhật</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From app store or google play</p>
+            <div class="row">
+                <img style="width: 180px; height: 50px;" src="./img/Download_on_the_App_Store_Badge.svg.webp" alt="">
+                <img style="width: 180px; height: 50px;" src="./img/Google_Play_Store_badge_EN.svg.webp" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img style="width: 150px; height: 50px;" src="./img/visa-mastercard.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>@ 2024 HTML CSS JAVASCRIPT</p>
+        </div>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/cart.js"></script> -->
+</body>
+</html>
